@@ -6,8 +6,13 @@ import styles from "@/styles/Home.module.css";
 import acsry from '../assets/acsry.jpg'
 import wfshn from '../assets/wfshn.jpg'
 import mfshn from '../assets/mfshn.jpg'
+import w1 from "../assets/w1.jpg"
+import w2 from "../assets/w2.jpg"
+import w3 from "../assets/w3.jpg"
+import w4 from "../assets/w4.jpg"
+import w5 from "../assets/w5.jpg"
 
-export default function Home() {
+export default function Home( { isCursorHovered }) {
   const root = useRef();
   const page0 = useRef();
 
@@ -28,29 +33,10 @@ export default function Home() {
         <link rel="icon" href="/veloura.png" />
       </Head>
       <main className={styles.main} ref={root}>
-      <div className={styles.page0} ref={page0}>
-        <div className={styles.page0side} style={{width:'30vw',backgroundColor:'white',overflow:"hidden"}}>
-          <h1><span style={{color:'black'}}>V</span>ELOURA</h1>
-          <h1>V<span style={{color:'black'}}>E</span>LOURA</h1>
-          <h1>VE<span style={{color:'black'}}>L</span>OURA</h1>
-          <h1>VEL<span style={{color:'black'}}>O</span>URA</h1>
-          <h1>VELO<span style={{color:'black'}}>U</span>RA</h1>
-          <h1>VELOU<span style={{color:'black'}}>R</span>A</h1>
-          <h1>VELOUR<span style={{color:'black'}}>A</span></h1>
-          <h1><span style={{color:'black'}}>V</span>ELOURA</h1>
-          <h1>V<span style={{color:'black'}}>E</span>LOURA</h1>
-          <h1>VE<span style={{color:'black'}}>L</span>OURA</h1>
-          <h1>VEL<span style={{color:'black'}}>O</span>URA</h1>
-          <h1>VELO<span style={{color:'black'}}>U</span>RA</h1>
-          <h1>VELOU<span style={{color:'black'}}>R</span>A</h1>
-          <h1>VELOUR<span style={{color:'black'}}>A</span></h1>
+        <div className={styles.page0} ref={page0}>
+        {/* <img src="/loader2.png" alt="Loader"/> */}
         </div>
-        <div className={styles.page0right}>
-        <img src="/circle.jpg" alt="img" />
-        <h1>VELOURA</h1>
-        <button>Click to Enter</button>
-        </div>
-      </div>
+        
         <div className={styles.page1}>
           <div className={styles.textheading}>
             <h2>Introducing the Latest Styles</h2>
@@ -82,27 +68,110 @@ export default function Home() {
         </div>
 
         <div className={styles.page2}>
-          <div style={{display:'flex'}}>
-            <div style={{overflow:'hidden'}}><Image style={{border:"1px solid #CCCCCC"}} src={wfshn}/></div>
-            <div style={{width:"20vw", display:"flex",flexDirection:"column",justifyContent:"center",paddingLeft:'1rem'}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ overflow: 'hidden' }}><Image style={{ border: "1px solid #CCCCCC" }} src={wfshn} /></div>
+            <div style={{ width: "20vw", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: '1rem' }}>
               <a href="">Womens Clothing</a>
               <h2>Graceful Glamour, <br />Your Go-To Destination for Women's Apparel</h2>
             </div>
           </div>
-          <div style={{display:'flex'}}>
-          <div style={{overflow:'hidden'}}><Image style={{border:"1px solid #CCCCCC"}} src={mfshn} /></div>
-          <div style={{width:"20vw", display:"flex",flexDirection:"column",justifyContent:"center",paddingLeft:'1rem'}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ overflow: 'hidden' }}><Image style={{ border: "1px solid #CCCCCC" }} src={mfshn} /></div>
+            <div style={{ width: "20vw", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: '1rem' }}>
               <a href="">Mens Clothing</a>
               <h2>Modern Gents, Classic Threads, Upgrade Your Wardrobe Now</h2>
             </div>
           </div>
-          <div style={{display:'flex'}}>
-          <div style={{overflow:'hidden'}}><Image style={{border:"1px solid #CCCCCC"}} src={acsry} /></div>
-          <div style={{width:"20vw", display:"flex",flexDirection:"column",justifyContent:"center",paddingLeft:'1rem'}}>
+          <div style={{ display: 'flex' }}>
+            <div style={{ overflow: 'hidden' }}><Image style={{ border: "1px solid #CCCCCC" }} src={acsry} /></div>
+            <div style={{ width: "20vw", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: '1rem' }}>
               <a href="">Accessories</a>
               <h2>Beyond the Ordinary, Accessories that Speak Volumes</h2>
             </div>
           </div>
+        </div>
+
+        <div className={styles.page3}>
+          <div className={styles.page3h}>
+            <h1>Shades of Black</h1>
+            <p>Infuse luxury into your fashion with shades of black, from Jet Black to Midnight Noir. Experiment for a refined and sophisticated look that blends creativity and elegance seamlessly.Let the allure of these deep hues define your personal style, creating an ensemble that seamlessly blends creativity and elegance.</p>
+          </div>
+          <div className={styles.img1}>
+            <Image src={w5} />
+          </div>
+          <div className={styles.img2}>
+            <Image src={w3} />
+          </div>
+        </div>
+
+        <div className={styles.page4}>
+                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Womens clothing <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
+                <div className={styles.imagesec}>
+
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={wfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={wfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                </div>
+        </div>
+
+        <div className={styles.page5}>
+        <div className={styles.videopage2}>
+            <video autoPlay loop muted playsInline src="/video2.mp4"></video>
+          </div>
+            <h1>Dress your entire family <br /><a style={{fontSize:'0.8rem',fontFamily:'sans-serif',fontWeight:'lighter'}} href="">Shop</a></h1>
+        </div>
+
+        <div className={styles.page6}>
+                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Mens clothing <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
+                <div className={styles.imagesec}>
+
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={mfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={mfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                </div>
+        </div>
+
+        <div className={styles.page7}>
+
+        </div>
+
+        <div className={styles.page8}>
+                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Accessories <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
+                <div className={styles.imagesec}>
+
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={acsry} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the accessory</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                  
+                  <div style={{paddingRight:'1rem'}}>
+                  <Image src={acsry} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
+                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the accessory</a>
+                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
+                  <p><small>2 colors +</small></p>
+                  </div>
+                  
+                </div>
         </div>
 
       </main>

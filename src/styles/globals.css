@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+.mf-cursor {
+  z-index: 9999; /* Set your desired z-index value */
+}
+
 body {
   /* background-color: black; */
   max-width: 100vw;
