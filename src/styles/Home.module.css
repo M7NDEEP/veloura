@@ -1,0 +1,163 @@
+    @font-face {
+        font-family: logo;
+        src: url("../assets/Pro\ Font.ttf");
+    }
+
+    .main{
+        margin: 0 auto;
+    }      
+
+    .page0{
+        user-select: none;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        display: flex;
+        z-index: 999;
+        background-color: black;
+        transition: all linear 1s;
+    }
+
+    .page0right{
+        display: flex;
+        flex-direction: column;
+    }
+    .page0right h1{
+        color: white;
+        font-family: logo;
+        font-style: italic;
+        font-size: 8rem;
+        margin-left: 1rem;
+        letter-spacing: 5px;
+        transform: translateY(-35%);
+        mix-blend-mode:difference;
+    }
+    .page0right button{
+        color: white;
+        min-width:8rem;
+        padding: 5px 10px;
+        font-weight: lighter;
+        position: absolute;
+        transform: translate(30%,70vh);
+        border-radius: 1px;
+        max-width: 10rem;
+        font-style: italic;
+        letter-spacing: 2px;
+        display: block;
+        border: 1px solid white;
+    }
+    .page0right img{
+        transform: translate(20%,5%);
+        width: 25vw;
+        border: 1px solid #cccccc1f;
+        filter: grayscale();
+    }
+
+    .page0side h1{
+        font-family: logo;
+        padding-left: 0.5rem;
+        font-size: 10rem;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
+        line-height: 9rem;
+        letter-spacing: 1.5px;
+    }
+    .page1{
+        width: 100%;
+        height: 90vh;    
+    }
+    .videopage{
+        height: 90vh;
+        overflow: hidden;
+    }
+    .videopage video{
+        width: 100%;
+        z-index: -9;
+        filter: grayscale(100%) contrast(100%) brightness(50%);
+    }
+    
+    .textheading{
+        position: absolute;
+        color: white;
+        z-index: 2;
+        margin-top: 8rem;
+        margin-left: 3.5rem;
+    }
+    .textheading h2{
+        user-select: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        margin-bottom: 1.2rem;
+    }
+    .textheading h1{
+        user-select: none;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        margin-bottom: 0.5rem;
+        margin-left: 0.2rem;
+    }
+    .textheading h3{
+        user-select: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        color: rgba(255, 255, 255, 0.712);
+        animation: shopnow 1s ease-in-out infinite alternate;
+        margin-bottom: 3rem;
+    }
+    .textheading a{
+        font-size: 1.1rem;
+        border: 1px solid white;
+        padding: 10px 20px;
+        border-radius: 1px;
+        margin-left: 0.2rem;
+    }
+    .textheading a:hover{
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+
+    @keyframes shopnow {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .page2{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 5rem;
+      }
+      .page2 img{
+        filter: grayscale();
+        cursor: pointer;
+        width: 15rem;
+        transition:all 0.4s ease-in;
+      }
+
+      .page2 img:hover{
+        filter: grayscale(30%);
+        transform: scale(1.05);
+      }
+      .page2 a{
+        font-weight: bold;
+        font-size: 0.9rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .page2 a:hover{
+        transform: translateX(5%);
+      }
+      .page2 h2{
+        color: rgb(71, 67, 67);
+        font-size: 0.8rem;
+      }
