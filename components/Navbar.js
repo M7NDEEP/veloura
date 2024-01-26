@@ -123,8 +123,8 @@ const navigation = {
         },
     ],
     pages: [
-        { name: 'Company', href: '#' },
-        { name: 'Stores', href: '#' },
+        { name: 'Shop', href: '#' },
+        { name: 'About', href: '#' },
     ],
 }
 
@@ -260,7 +260,7 @@ const Navbar = () => {
                 </Dialog>
             </Transition.Root>
 
-            <header className="relative bg-white" style={{ zIndex: "999" }}>
+            <header className="relative bg-white" style={{ zIndex: "999", position: 'sticky' }}>
                 <p className="flex h-8 items-center justify-center bg-black px-4 text-sm font-medium text-white sm:px-6 lg:px-8" style={{ letterSpacing: '0.5px' }}>
                     Benefit from free shipping and our 30-day return or refund assurance.
                 </p>
@@ -398,11 +398,23 @@ const Navbar = () => {
                                 </div>
 
                                 {/* Search */}
+
                                 <div className="flex lg:ml-6">
-                                    <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                                    <input
+                                    
+                                        type="text"
+                                        placeholder="Search..."
+                                        // onChange={}
+                                        className="p-2 text-gray-400 focus:outline-none focus:border focus:border-grey-300"
+                                    />
+                                    <button
+                                        // onClick={handleSearch}
+                                        className="p-2 text-gray-400 hover:text-gray-500"
+                                    >
                                         <span className="sr-only">Search</span>
+                                        {/* Replace the next line with your MagnifyingGlassIcon component */}
                                         <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
-                                    </a>
+                                    </button>
                                 </div>
 
                                 {/* Cart */}

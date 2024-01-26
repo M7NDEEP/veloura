@@ -6,13 +6,10 @@ import styles from "@/styles/Home.module.css";
 import acsry from '../assets/acsry.jpg'
 import wfshn from '../assets/wfshn.jpg'
 import mfshn from '../assets/mfshn.jpg'
-import w1 from "../assets/w1.jpg"
-import w2 from "../assets/w2.jpg"
 import w3 from "../assets/w3.jpg"
-import w4 from "../assets/w4.jpg"
 import w5 from "../assets/w5.jpg"
 
-export default function Home( { isCursorHovered }) {
+export default function Home({ isCursorHovered }) {
   const root = useRef();
   const page0 = useRef();
 
@@ -24,6 +21,13 @@ export default function Home( { isCursorHovered }) {
     }
   }, []);
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <Head>
@@ -32,16 +36,16 @@ export default function Home( { isCursorHovered }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/veloura.png" />
       </Head>
+      <div className={styles.scroll} onClick={handleScrollToTop}
+        style={{ position: 'fixed', bottom: '3rem', right: '1.8rem', zIndex: '999', mixBlendMode: 'overlay', cursor: 'pointer' }}><img src="/img.png" style={{ width: '4vw' }}></img></div>
+      
       <main className={styles.main} ref={root}>
-        <div className={styles.page0} ref={page0}>
-        {/* <img src="/loader2.png" alt="Loader"/> */}
-        </div>
-        
+
         <div className={styles.page1}>
           <div className={styles.textheading}>
             <h2>Introducing the Latest Styles</h2>
             <h1>
-              Discover the 2023 <br />
+              Discover the 2024 <br />
               <span
                 style={{
                   color: "transparent",
@@ -63,7 +67,7 @@ export default function Home( { isCursorHovered }) {
             </a>
           </div>
           <div className={styles.videopage}>
-            <video autoPlay loop muted playsInline src="/video1.mp4"></video>
+            <video autoPlay loop muted playsInline src="/video4.webm"></video>
           </div>
         </div>
 
@@ -105,73 +109,114 @@ export default function Home( { isCursorHovered }) {
         </div>
 
         <div className={styles.page4}>
-                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Womens clothing <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
-                <div className={styles.imagesec}>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: '1.2rem', marginBottom: '1rem' }}>Womens clothing <span><a href="" className={styles.viewall} style={{ fontSize: '1rem' }}>&#8594; View all</a></span></div>
+          <div className={styles.imagesec}>
 
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={wfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={wfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                </div>
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={wfshn} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={wfshn} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.page5}>
-        <div className={styles.videopage2}>
+          <div className={styles.videopage2}>
             <video autoPlay loop muted playsInline src="/video2.mp4"></video>
           </div>
-            <h1>Dress your entire family <br /><a style={{fontSize:'0.8rem',fontFamily:'sans-serif',fontWeight:'lighter'}} href="">Shop</a></h1>
+          <h1>Dress your entire family <br /><a style={{ fontSize: '0.8rem', fontFamily: 'sans-serif', fontWeight: 'lighter' }} href="">Shop</a></h1>
         </div>
 
         <div className={styles.page6}>
-                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Mens clothing <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
-                <div className={styles.imagesec}>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: '1.2rem', marginBottom: '1rem' }}>Mens clothing <span><a href="" className={styles.viewall} style={{ fontSize: '1rem' }}>&#8594; View all</a></span></div>
+          <div className={styles.imagesec}>
 
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={mfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={mfshn} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the garment</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                </div>
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={mfshn} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={mfshn} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.page7}>
-
+          <div className={styles.logo} style={{ display: "flex", overflow: "Hidden", justifyContent: "space-evenly", alignItems: 'center', pointerEvents: 'none', userSelect: 'none' }}>
+            <img src="b4.png" alt="" style={{ width: '10vw', height: "10vw" }} />
+            <img src="b1.png" style={{ width: '10vw', height: "10vw" }} alt="" />
+            <img src="b3.png" style={{ width: '10vw', height: "6vw" }} alt="" />
+            <img src="b2.png" alt="" style={{ width: '10vw', height: "10vw" }} />
+            <img src="b5.png" alt="" style={{ width: '6vw', height: "6vw" }} />
+            <img src="b6.png" alt="" style={{ width: '8vw', height: "4vw" }} />
+            <img src="b7.png" alt="" style={{ width: '10vw', height: "10vw" }} />
+          </div>
         </div>
 
         <div className={styles.page8}>
-                <div style={{display:"flex",justifyContent:"space-between",fontSize:'1.2rem' ,marginBottom:'1rem'}}>Accessories <span><a href="" className={styles.viewall} style={{fontSize:'1rem'}}>&#8594; View all</a></span></div>
-                <div className={styles.imagesec}>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: '1.2rem', marginBottom: '1rem' }}>Accessories <span><a href="" className={styles.viewall} style={{ fontSize: '1rem' }}>&#8594; View all</a></span></div>
+          <div className={styles.imagesec}>
 
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={acsry} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the accessory</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                  
-                  <div style={{paddingRight:'1rem'}}>
-                  <Image src={acsry} style={{width:'20vw' ,marginBottom:'1rem',transform:"translateX(-3%)"}}/>
-                  <a class="hover:text-gray-600 hover:underline" style={{cursor:"pointer"}}>Title of the accessory</a>
-                  <h2 style={{fontSize:"0.9rem",lineHeight:"1rem",color:'grey'}}>Rs. 5000.00</h2>
-                  <p><small>2 colors +</small></p>
-                  </div>
-                  
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={acsry} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the accessory</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+
+            <div style={{ paddingRight: '1rem' }}>
+              <Image src={acsry} style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the accessory</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div className={styles.page9}>
+          <h1 style={{ color: '#D9D8D6', fontFamily: "serif", fontSize: '10rem', textAlign: 'center', lineHeight: '10rem' }}>100%</h1>
+          <h2 style={{ color: '#34393C', fontFamily: "serif", fontSize: '1.6rem', textAlign: 'center', width: '50vw', margin: '0 auto' }}><span style={{ fontStyle: 'italic' }}>100% Indian Production -</span>  We take immense pride in the fact that all our products are crafted right here in India. We meticulously ensuring the highest quality from the initial phase to the final product.</h2>
+          <button style={{ fontSize: '0.9rem', border: '1px solid #D9D8D6', padding: '8px 18px', borderRadius: '25px', backgroundColor: '#D9D8D6', margin: '0 auto', display: "block", marginTop: '1.5rem' }}>Read More</button>
+        </div>
+
+        <div className={styles.page10}>
+            <div style={{display:'flex'}}>
+
+                <div style={{width:'40vw',height:'40vw',overflow:'hidden',borderRadius:'5px',margin:'5px'}} className={styles.box1}>
+                      <a href="" style={{color:'White',zIndex:'2',position:'relative',top:'1rem',left:'1rem',fontWeight:'bold',letterSpacing:'1px'}}>About Us</a>
+                  <img src="/sqr2.jpg" alt="aboutus" style={{transform:'translate(0%,-23%)' ,filter:'brightness(90%)'}}/>
                 </div>
+                <div>
+                  <div style={{width:'50vw',height:'20vw',overflow:'hidden',backgroundColor:'red',borderRadius:'5px',margin:'5px'}} className={styles.box2}>
+                  <a href="" style={{color:'White',zIndex:'2',position:"relative",top:'1rem',left:'1rem',fontWeight:'bold',letterSpacing:'1px'}}>Fabric Quality</a>
+                  <img src="/sqr3.jpg" style={{filter:'brightness(80%)',transform:'translateY(-20%)'}}/>
+                  </div>
+
+                  <div style={{display:'flex',width:'51vw'}}>
+                    <div style={{width:'25vw',height:'19.2vw',overflow:'hidden',backgroundColor:'red',borderRadius:'5px',margin:'5px'}} className={styles.box3}>
+                    <a href="" style={{color:'White',zIndex:'2',position:"relative",top:'1rem',left:'1rem',fontWeight:'bold',letterSpacing:'1px'}}>Our Stories</a>
+                      <img style={{width:'25vw',transform:'translateY(-40%)',filter:'brightness(80%)'}} src="/sqr4.jpg"/>
+                    </div>
+                    <div style={{width:'25vw',height:'19.2vw',overflow:'hidden',borderRadius:'5px',margin:'5px'}} className={styles.box4}>
+                    <a href="" style={{color:'White',zIndex:'2',position:"relative",top:'1rem',left:'1rem',fontWeight:'bold',letterSpacing:'1px'}}>Shop</a>
+                      <img style={{width:'50vw',transform:'translateY(8%)',scale:'1.5',filter:'brightness(70%)'}} src="/sqr5.jpg"/>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
 
       </main>
