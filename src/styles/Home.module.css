@@ -273,3 +273,41 @@
 
 /* ABOUT US */
 
+/* CART PAGE */
+.cartpage{
+  margin: 0 auto;
+  width: 50rem;
+  padding-top: 3rem; 
+}
+.cartitem{
+  display: flex;
+}
+.cartpage h1{
+  font-weight:500;
+}
+.cimg{
+  width: 10vw;
+  overflow: hidden;
+  border: 1px solid #80808054;
+}
+
+.cartdtls{
+  width: 100%;
+  padding: 1rem;
+}
+
+.checkout{
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5rem;
+  margin-bottom:10rem;
+}
+
+.cross{
+  transition: all 0.3s ease-in-out;
+}
+.cross:hover{
+  transform: scale(1.8);
+}
