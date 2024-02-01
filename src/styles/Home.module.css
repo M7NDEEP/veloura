@@ -36,11 +36,11 @@
         height: 90vh;
         overflow: hidden;
     }
-    .videopage video{
-      transform: translateY(-20%);
+    .videopage img{
+      transform: translateY(-15%);
         width: 100%;
         z-index: -9;
-        filter: grayscale(10%) contrast(100%) brightness(50%);
+        filter: grayscale(40%) contrast(100%) brightness(50%);
         transition: all 1.5s ease-in-out;
     }
 
@@ -268,3 +268,8 @@
     .box4:hover{
       transform: scale(0.97);
     }
+
+
+
+/* ABOUT US */
+

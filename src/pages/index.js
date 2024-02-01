@@ -67,7 +67,7 @@ export default function Home({ isCursorHovered }) {
             </a>
           </div>
           <div className={styles.videopage}>
-            <video autoPlay loop muted playsInline src="/video4.webm"></video>
+            <img src="/homeimg1.jpg" alt="Shop for fall winter" />
           </div>
         </div>
 
