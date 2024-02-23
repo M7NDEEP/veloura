@@ -124,7 +124,7 @@ const navigation = {
         },
     ],
     pages: [
-        { name: 'Shop', href: '#' },
+        { name: 'Shop', href: '/shop' },
         { name: 'About', href: '/about' },
     ],
 }

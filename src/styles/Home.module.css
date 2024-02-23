@@ -311,3 +311,45 @@
 .cross:hover{
   transform: scale(1.8);
 }
+
+.shop{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.filter{
+  width: 25vw;
+  height: 100vh;
+  background-color: rgba(232, 225, 225, 0.235);
+}
+
+
+/* Product Page  */
+.pmain{
+  display: flex;
+}
+.pmain img{
+  width: 25rem;
+}
+
+.clbtn{
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0.1rem;
+}
+.colours span{
+  margin: 0px 5px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.colours span:hover{
+  border: 1px solid black;
+}
+
+
