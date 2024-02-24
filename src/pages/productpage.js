@@ -12,18 +12,94 @@ const productpage = () => {
                 <link rel="icon" href="/veloura.png" />
             </Head>
             <main>
-                <div className={styles.pmain}>
+                <div className={styles.pmain1}>
                     <img src="https://lenouveauchef.com/cdn/shop/files/908001069_5-full-front.jpg?v=1708623938&width=1440" alt="" />
                     <div>
-                        <div>Product Name <span style={{marginLeft:'8rem'}}>Rs.16,000.00</span></div>
-                        <h2>Product category</h2>
-                        <div className={styles.colours}>
-                            <span><div className={styles.clbtn} style={{backgroundColor:'blue'}}></div></span>
-                            <span><div className={styles.clbtn} style={{backgroundColor:'grey'}}></div></span>
-                            <span><div className={styles.clbtn} style={{backgroundColor:'purple'}}></div></span>
+                        <div style={{ fontSize: '1.5rem' }}>Product Name <span style={{ marginLeft: '8rem', fontSize: '1.2rem' }}>Rs.16,000.00</span></div>
+                        <h2 style={{ fontSize: '0.9rem', color: '#80828E' }}>Product category</h2>
+                        <div className={styles.colours} style={{ borderTop: '1px solid #80828e4f', margin: '0.8rem 0rem' }}>
+                            <small style={{ marginLeft: '0.4rem' }}>Color :</small>
+                            <br />
+                            <a href='#' className={styles.clbtn} style={{ backgroundColor: 'blue' }}></a>
+                            <a href='#' className={styles.clbtn} style={{ backgroundColor: 'grey' }}></a>
+                            <a href='#' className={styles.clbtn} style={{ backgroundColor: 'purple' }}></a>
+                        </div>
+                        <div className={styles.size} style={{ borderTop: '1px solid #80828e4f', marginTop: '0.4rem' }}>
+                            <small style={{ marginLeft: '0.4rem' }}>Select size :</small>
+                            <br />
+                            <div style={{ height: '0.4rem' }}></div>
+                            <a href="#">34</a>
+                            <a href="#">38</a>
+                            <a href="#">95</a>
+                        </div>
+                        <br />
+                        <div>
+                            <a className={styles.buynow}>
+                                Add to Cart
+                            </a>
+                        </div>
+                        <div style={{ marginTop: '1rem', borderTop: '1px solid #80828e4f' }}>
+                            <p><small>  100% Original Products <br />
+                                Pay on delivery might be available <br />
+                                Easy 14 days returns and exchanges <br />
+                                Try & Buy might be available</small></p>
                         </div>
                     </div>
                 </div>
+
+                <div className={styles.pmain2}>
+                    <div style={{borderRight:'1px solid #D8D8DC',paddingRight:'4rem'}}><h1> Product Details</h1>
+                    <p><small>Black checked opaque Casual shirt ,has a spread collar, button placket,<br /> 1 patch pocket, long roll-up sleeves, curved hem</small></p>
+                    <h2 style={{fontWeight:'500',marginTop:'1rem'}}>Size and Fit</h2>
+                    <p><small>Regular Fit <br />
+                        The model (height 6') is wearing a size 40</small></p>
+                    <h2 style={{fontWeight:'500',marginTop:'1rem'}}>Material & Care</h2>
+                    <p><small>100% Cotton <br />Machine-wash</small></p></div>
+                    
+                    <div style={{paddingLeft:'4rem'}}>
+                        <h1>Reviews</h1>
+                        <h2><small>⭐⭐⭐⭐</small> 4 out of 5</h2>
+                        <p><small>5,344 global ratings</small></p>
+                        <br />
+                        <p style={{fontWeight:'500',paddingBottom:'0.4rem'}}>Customer Reviews (5652)</p>
+                        
+                        <div style={{borderBottom:'1px solid #D8D8DC',paddingBottom:'2rem',marginBottom:'2rem'}}>
+                        <p style={{width:'30vw'}}><small>If your hight is 5'10 and weight is 75-80 .. M size is perfectly suitable for you.. Because in M size they are provide chest 42 ... So it's comfortable and... But i need. 0.5 inch long then it's good.. Now it little bit short. Quality : what they show in the picture it's not came like that.. There is no white shade lines.. It's blue shade line. Thank you</small></p>
+                        <p style={{marginTop:'0.3rem'}}><small>Arpit Jain | 12 sep 2023 </small><span style={{marginLeft:'8rem'}}><small>2 people found this helpfull</small></span></p>
+                        </div>
+
+                        <div style={{borderBottom:'1px solid #D8D8DC',paddingBottom:'2rem',marginBottom:'2rem'}}>
+                        <p style={{width:'30vw'}}><small>Actually the fit and feel of shirt is very nice and soft , Quality of fabric looks good, But the big disappointment was that colour of the shirt is little bit different from what is shown in the image , The pictures shown is very bright but the actual colour of shirt is not that bright , Please look for pictures posted in customer review for real colour.</small></p>
+                        <p style={{marginTop:'0.3rem'}}><small>Naris Khan | 28 Jan 2023 </small><span style={{marginLeft:'8rem'}}><small>6 people found this helpfull</small></span></p>
+                        </div>
+
+                        <div style={{borderBottom:'1px solid #D8D8DC',paddingBottom:'2rem',marginBottom:'2rem'}}>
+                        <p style={{width:'30vw'}}><small>My first purchase from veloura. Worth every penny. I love the color .fabric is good better than local shirts. Wear L Size Fitting is great my height is 6 ft. And if your chest under 38 to 42 inch go for Large size. ⭐⭐⭐⭐⭐ Thank you Veloura.</small></p>
+                        <p style={{marginTop:'0.3rem'}}><small>Josh Merron  | 1 Aug 2022 </small><span style={{marginLeft:'8rem'}}><small>1 people found this helpfull</small></span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div className={styles.pmain3}>
+                <h2>You might also like</h2>
+                <div className={styles.imagesec} style={{marginTop:'1.5rem'}}>
+                <div style={{ paddingRight: '1rem' }}>
+              <img src="https://lenouveauchef.com/cdn/shop/files/908001069_5-full-front.jpg?v=1708623938&width=1440" style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+            <div style={{ paddingRight: '1rem' }}>
+              <img src="https://lenouveauchef.com/cdn/shop/files/908001069_5-full-front.jpg?v=1708623938&width=1440" style={{ width: '20vw', marginBottom: '1rem', transform: "translateX(-3%)" }} />
+              <a class="hover:text-gray-600 hover:underline" style={{ cursor: "pointer" }}>Title of the garment</a>
+              <h2 style={{ fontSize: "0.9rem", lineHeight: "1rem", color: 'grey' }}>Rs. 5000.00</h2>
+              <p><small>2 colors +</small></p>
+            </div>
+          </div>
+                </div>
+                
             </main>
         </>
     )

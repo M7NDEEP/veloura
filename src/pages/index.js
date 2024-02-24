@@ -110,6 +110,7 @@ export default function Home({ isCursorHovered }) {
 
         <div className={styles.page4}>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: '1.2rem', marginBottom: '1rem' }}>Womens clothing <span><a href="" className={styles.viewall} style={{ fontSize: '1rem' }}>&#8594; View all</a></span></div>
+          
           <div className={styles.imagesec}>
 
             <div style={{ paddingRight: '1rem' }}>
