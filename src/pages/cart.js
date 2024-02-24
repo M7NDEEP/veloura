@@ -44,7 +44,7 @@ const cart = () => {
                 <span>Rs. 4580.00</span></div>
                 </div>
                 <small><p style={{color:'grey'}}>Taxes and <span style={{textDecoration:'underline'}}> <a href="">shipping</a> </span> calculated at checkout</p></small>
-                <button style={{border:'1px solid #5D6163',color:'white',backgroundColor:'#34393C',padding:'12px 0px',borderRadius:'5px',margin:'10px 0px'}}>
+                <button style={{border:'1px solid #2E2D34',color:'white',backgroundColor:'#2E2D34',padding:'12px 0px',borderRadius:'5px',margin:'10px 0px'}}>
                     Check out
                 </button>
             </div>
