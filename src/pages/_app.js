@@ -6,6 +6,8 @@ import "@/styles/globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Lenis from '@studio-freight/lenis';
+import store from '@/redux/store';
+import { Provider } from 'react-redux';
 
 function App({ Component, pageProps }) {
   useEffect(() => {
@@ -24,9 +26,11 @@ function App({ Component, pageProps }) {
 
   return (
     <>
+      <Provider store={store}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
+        </Provider>
     </>
   );
 }
