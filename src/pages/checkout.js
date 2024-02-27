@@ -8,8 +8,8 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Dilivery from './checkout/dilivery';
-import Ordersummary from './checkout/ordersummary';
+import Dilivery from './checkout/Dilivery';
+import Ordersummary from './checkout/Ordersummary';
 
 const steps = ['Login', 'Delivery Details', 'Order Summary', 'Payment'];
 
@@ -59,7 +59,6 @@ export default function HorizontalLinearStepper() {
                   {step == 2 ? <Dilivery /> : <Ordersummary />}
                 </div>
               </React.Fragment>
-
             )}
           </Box>
         </div>
