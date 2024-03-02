@@ -415,3 +415,9 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.sticky_filter {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}

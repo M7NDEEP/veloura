@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.5",
     "@reduxjs/toolkit": "^2.2.1",
     "@studio-freight/lenis": "^1.0.33",
