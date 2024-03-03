@@ -2,6 +2,7 @@ import { Grid, Paper } from '@mui/material'
 import React from 'react'
 import FiberManualRecordOutlinedIcon from '@mui/icons-material/FiberManualRecordOutlined';
 import styles from "@/styles/Home.module.css";
+import Link from 'next/link';
 
 const orderstatus = [
   { label: 'On the Way', value: "on_the_way" },
@@ -39,6 +40,7 @@ const order = () => {
             <Paper elevation={1} sx={{ padding: '1rem', height: 'fit-content', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }} style={{ marginRight: '2rem', marginBottom: '1rem' }}>
               <Grid container spacing={2}>
                 <Grid item xs={6}>
+                <Link href="/orderdetails">
                   <div className='flex cursor-pointer'>
                     <img style={{ width: '5rem' }} src="https://lenouveauchef.com/cdn/shop/files/908001069_5-full-front.jpg?v=1708623938&width=1440" alt="image" />
                     <div className='ml-5 space-y-2'>
@@ -47,6 +49,7 @@ const order = () => {
                       <p className='opacity-50 text-xs font-semibold'>Color : Black</p>
                     </div>
                   </div>
+                  </Link>
                 </Grid>
                 <Grid item xs={2}>
                   <p>Rs. 2000.00</p>
